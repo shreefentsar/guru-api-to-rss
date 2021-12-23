@@ -9,6 +9,8 @@ npm install
 
 node index.js
 
-after that it will create a live page at port 3000 but for sure you can use your way like wsgi to make this public rss link for your rss feed, please note that there is a limit of 60 requests per minute.
+after that it will create a live page at port 3000 but for sure you can use your way like wsgi to make this public rss link for your rss feed, please note that there is a Rate Limit will be applied at the IP level, allowing 30 requests per a Minute. When the rate limit is exceeded, the response code 429 will be returned.
+
+
 
 you have to change the client_id and client_secret in index.js
